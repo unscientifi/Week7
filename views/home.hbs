@@ -1,28 +1,15 @@
-<section id="section1" class="panel">
-    <div class="bio-info">
-        <h1 class="p-name">Some generic info here...</h1>
-    </div>
 
-</section>
-{{!-- <section id="section2" class="panel">panel 2</section> --}}
-<section id="section3" class="panel">
+<section id="section1" class="panel1">
     <h1 class="user-panel-heading">
-        Welcome to our awesome team section!
+        Do you enjoy technology?
     </h1>
 
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odit animi, vero perspiciatis
-        accusantium nisi molestiae, nostrum quisquam unde deleniti, expedita dicta ab quae possimus omnis amet!
-        Modi, nemo autem!Ducimus dolorum aliquid id quae vel sapiente, omnis iste fugiat magni rem
-        exercitationem. Facilis voluptatum praesentium animi rem provident, nam rerum reiciendis perspiciatis
-        optio dolorem magnam temporibus neque quo cum.
-    </p>
+    
 
-    <h4>Click on a team member below to learn more about them.</h4>
+    <h3>Click on a Button below to see more information.</h3>
 
-    <div class="team">
-        <!-- loop through all our team members and put their info on the page -->
-        <!-- this is like a forEach loop with plain JS -->
+    <div class="things-panel">
+        
 
         {{#each thing}}
         <div class="user-panel">
@@ -33,13 +20,23 @@
             </a>
 
             <h1>{{ Name }}</h1>
-            <h3>{{ Price }}</h3>
+            <h3 class="u-price">{{ Price }}</h3>
         </div>
         {{/each}}
 
 
     </div>
     </div>
+
+    <section id="section2" class="panel2">
+    <div class="bio-info">
+        <h1 class="p-name">DJI Company Info</h1>
+        <p>
+        DJI Sciences and Technologies Ltd. (Chinese: 大疆创新科技有限公司),is a Chinese technology company headquartered in Shenzhen, Guangdong with factories throughout the world, and is a world-leading manufacturer of commercial unmanned aerial vehicles (commonly known as "drones") for aerial photography and videography. It also designs and manufactures camera gimbals, action cameras, camera stabilizers, flight platforms and propulsion systems and flight control systems.
+    </p>
+    </div>
+
+</section>
 
     <!-- this will be filled in on the client side when we render our AJAX data -->
     <section class="lightbox">
@@ -53,5 +50,3 @@
         </div>
     </section>
 </section>
-<section id="section4" class="panel">panel 4</section>
-<section id="section5" class="panel"></section>

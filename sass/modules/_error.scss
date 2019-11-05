@@ -3,8 +3,24 @@ body {
     color: white;
 }
 
-.error-section a, .error-home {
-    color: white;
+ .error-home {
     text-decoration: none;
+    display: block;
+    margin: auto;
+    font-size: 1em;
+    color: #494949;
+    text-transform: uppercase;
+    background: orange;
+    padding: 10px;
+    border: 3px solid orange;
+    text-align: center;
 }
 
+.errorNum {
+    color: orange;
+    font-size: 4em;
+}
+
+.errorInfo {
+    margin: 0 5% 10% 5%;
+}

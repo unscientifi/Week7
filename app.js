@@ -15,9 +15,9 @@ app.use('/', require('./routes/index'));
 
 //Error page 
 app.use((req, res, next) => {
-    var err = new Error('Not Found');
+    var err = new Error(' Not Found');
     err.status = 404;
-    err.customMessage = "Oh no! Something happened!"
+    err.customMessage = "Ooops! Something happened to your page!"
 
     next(err);
 })
