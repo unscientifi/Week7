@@ -22,7 +22,22 @@
 
     <div class="team">
         <!-- loop through all our team members and put their info on the page -->
-        
+        <!-- this is like a forEach loop with plain JS -->
+
+        {{#each thing}}
+        <div class="user-panel">
+            <img class="u-avatar" src="images/{{ Image }}" alt="avatar">
+
+            <a class="u-link" href="{{ ID }}">
+                 More Info
+            </a>
+
+            <h1>{{ Name }}</h1>
+            <h3>{{ Price }}</h3>
+        </div>
+        {{/each}}
+
+
     </div>
     </div>
 
@@ -34,7 +49,7 @@
         </div>
 
         <div class="lb-content">
-
+            
         </div>
     </section>
 </section>
